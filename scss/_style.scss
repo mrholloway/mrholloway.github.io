@@ -1,135 +1,3 @@
-//@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i');
-html,
-body {
-  margin: 0 !important;
-  height: 100% !important;
-  overflow: hidden !important;
-}
-
-.center {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-}
-
-#wrapper {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.content {
-  position: relative;
-  z-index: 100;
-  h2 {
-    font-family: 'Brother 1816', sans-serif;
-    font-size: 30px;
-    color: #ffffff;
-    text-align: center;
-  }
-  span {
-    /* let’s explore:: */
-    font-family: 'Brother 1816', sans-serif;
-    font-size: 25px;
-    color: #FFFFFF;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    font-weight: 800;
-    text-align: center;
-  }
-  .logo {
-    img {
-      padding-top: 10%;
-      padding-bottom: 10%;
-      display: block;
-      margin: 0 auto;
-      @include breakpoint (small only) {
-        width: 60%;
-      }
-    }
-  }
-  .tagline {
-    h1 {
-      /* Feeling is believing: */
-      font-size: 48px;
-      font-family: 'Brother 1816', sans-serif;
-      font-weight: 800;
-      text-align: center;
-      text-transform: uppercase; //font-size: 48px;
-      color: #FFFFFF;
-      letter-spacing: 5px;
-      @include breakpoint (small only) {
-        font-size: 26px;
-      }
-    }
-  }
-  .contact {
-    padding-top: 50px;
-    @include breakpoint (small only) {
-      padding-top: 0px;
-    }
-    span {
-      /* let’s explore:: */
-      font-family: 'Brother 1816', sans-serif;
-      font-size: 25px;
-      color: #FFFFFF;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      font-weight: 800;
-      text-align: center;
-      @include breakpoint (small only) {
-        font-size: 13px;
-      }
-    }
-    h2 {
-      font-family: 'Brother 1816', sans-serif;
-      font-size: 30px;
-      color: #ffffff;
-      text-align: center;
-      @include breakpoint (small only) {
-        font-size: 13px;
-      }
-    }
-    a {
-      color: #ffffff;
-      transition: .5s ease;
-      &:hover {
-        color: #d4762b;
-      }
-    }
-  }
-  .services {
-    padding: 10px 0 10px 0;
-    ul,
-    li {
-      display: inline-block;
-      padding: 0 40px 0 40px;
-      text-align: center;
-      margin-left: 0;
-      h2 {
-        font-family: 'Brother 1816', sans-serif;
-        font-size: 30px;
-        color: #ffffff;
-        text-align: center;
-        @include breakpoint (small only) {
-          font-size: 20px;
-        }
-      }
-    }
-  }
-}
-
-.background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -100;
-  img {
-    width: 100%;
-  }
-}
-
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i');
 .center {
   display: flex;
   align-content: center;
@@ -192,13 +60,40 @@ body {
       text-transform: uppercase; //font-size: 48px;
       color: #FFFFFF;
       letter-spacing: 5px;
+      padding-bottom: 20px;
+      @include breakpoint (medium only) {
+        padding-bottom: 20px;
+
+      }
       @include breakpoint (small only) {
         font-size: 26px;
+        line-height: 30px;
+        padding-bottom: 30px;
       }
     }
   }
+
+  .spacer {
+    padding-bottom: 40px;
+  }
   .services {
-    padding: 10px 0 10px 0;
+   padding-bottom: 10px;
+    h2 {
+      font-family: 'Brother 1816', sans-serif;
+      font-size: 28px;
+      color: #ffffff;
+      text-align: center;
+      margin-bottom: 0;
+      @include breakpoint (medium only) {
+        padding-bottom: 15px;
+        margin-bottom: 0;
+      }
+      @include breakpoint (small only) {
+        padding-bottom: 0px;
+        font-size: 20px;
+        margin-bottom: 0;
+      }
+    }
     ul,
     li {
       display: inline-block;
@@ -207,10 +102,15 @@ body {
       margin-left: 0;
       h2 {
         font-family: 'Brother 1816', sans-serif;
+        line-height: 22px;
         font-size: 30px;
         color: #ffffff;
         text-align: center;
+        @include breakpoint (medium only) {
+          padding-bottom: 15px;
+        }
         @include breakpoint (small only) {
+          padding-bottom: 10px;
           font-size: 20px;
         }
       }
@@ -231,7 +131,7 @@ body {
       font-weight: 800;
       text-align: center;
       @include breakpoint (small only) {
-        font-size: 13px;
+        font-size: 15px;
       }
     }
     h2 {
@@ -240,7 +140,7 @@ body {
       color: #ffffff;
       text-align: center;
       @include breakpoint (small only) {
-        font-size: 13px;
+        font-size: 18px;
       }
     }
     a {
